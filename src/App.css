@@ -247,11 +247,12 @@ abbr[title] {
 .inputforms {
   text-align: center;
   width: 150px;
-  height: 20px;
+  height: 30px;
   font-family: "Adobe Regular";
   font-size: 12px;
-  margin-bottom: 15px;
-  margin-top: 10px;
+  margin: 10px 0px 0px 0px;
+  /*   margin-bottom: 15px;
+  margin-top: 10px; */
   border-bottom: 0.5px solid rgb(0, 0, 0);
   border-top: none;
   border-right: none;

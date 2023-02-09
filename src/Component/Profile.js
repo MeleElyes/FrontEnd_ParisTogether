@@ -175,11 +175,16 @@ const Profile = () => {
               src={`http://localhost:3001${user.profile_picture}`}
               alt=""
             />
-            <input type="file" onChange={(e) => setImage(e.target.files[0])} />
+            <div>
+              <input
+                type="file"
+                onChange={(e) => setImage(e.target.files[0])}
+              />
 
-            <button className="registerbuttons" onClick={postImage}>
-              Envoyer
-            </button>
+              <button className="registerbuttons" onClick={postImage}>
+                Envoyer
+              </button>
+            </div>
           </div>
 
           <div className="profilemap">

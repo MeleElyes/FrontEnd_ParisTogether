@@ -110,7 +110,7 @@ const HomePage = () => {
           backdrop="static"
           keyboard={false}
         >
-          <Modal.Header closeButton></Modal.Header>
+          <Modal.Header  closeButton></Modal.Header>
 
           <Modal.Body>
             {" "}
@@ -121,7 +121,7 @@ const HomePage = () => {
             />
           </Modal.Body>
           <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>
+            <Button className="footerbacktotopbuttonMap" variant="secondary" onClick={handleClose}>
               Close
             </Button>
           </Modal.Footer>

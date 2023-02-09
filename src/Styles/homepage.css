@@ -240,3 +240,65 @@
 .modd {
   margin: 26% 0% 0% 50%;
 }
+
+.footerbacktotopbuttonMap {
+  color: #ba3030;
+  padding: 10px 20px;
+  font-family: "Adobe Bold";
+  text-decoration: none;
+  font-weight: 600;
+  margin: 5px 5px;
+  border: 2px solid #ba3030;
+  background-color: white;
+  border-radius: 3px;
+  font-size: 14px;
+  cursor: pointer;
+  position: absolute;
+  left: 47.2%;
+  top: 160px;
+}
+
+.footerbacktotopbuttonMap:hover {
+  color: white;
+  padding: 10px 20px;
+  font-family: "Adobe Bold";
+  text-decoration: none;
+  font-weight: 600;
+  margin: 5px 5px;
+  border: 2px solid #30BA9D;
+  background-color: #30BA9D;
+  border-radius: 3px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+
+
+.footerbacktotopbuttonMapClose {
+  color: #30BA9D;
+  padding: 10px 20px;
+  font-family: "Adobe Bold";
+  text-decoration: none;
+  font-weight: 600;
+  margin: 5px 5px;
+  border: 2px solid #30BA9D;
+  background-color: white;
+  border-radius: 3px;
+  font-size: 14px;
+  cursor: pointer;
+  position: absolute;
+}
+
+.footerbacktotopbuttonMapClose:hover {
+  color: white;
+  padding: 10px 20px;
+  font-family: "Adobe Bold";
+  text-decoration: none;
+  font-weight: 600;
+  margin: 5px 5px;
+  border: 2px solid #30BA9D;
+  background-color: #30BA9D;
+  border-radius: 3px;
+  font-size: 14px;
+  cursor: pointer;
+}
