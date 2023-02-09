@@ -28,7 +28,7 @@ const Register = () => {
     setDifferentPassword(false);
 
     await axios
-      .post("http://localhost:3001/request/register", register)
+      .post("http://localhost:8000/request/register", register)
       .then((res) => {
         localStorage.setItem("auth-token", res.data);
         navigate("/registertwo");

@@ -22,7 +22,7 @@ const Profile = () => {
   const addFavorite = async (tag) => {
     axios
       .put(
-        `http://localhost:3001/request/user`,
+        `http://localhost:8000/request/user`,
         { favoriteTag: tag },
         { headers: { authorization: token } }
       )
@@ -33,7 +33,7 @@ const Profile = () => {
   };
   const removeFavorite = async (tag) => {
     axios
-      .delete(`http://localhost:3001/request/user`, {
+      .delete(`http://localhost:8000/request/user`, {
         data: { favoriteTag: tag },
         headers: { authorization: token },
       })
@@ -65,7 +65,7 @@ const Profile = () => {
     formData.append("profile_picture", image);
 
     axios
-      .put("http://localhost:3001/request/uploadimage", formData, {
+      .put("http://localhost:8000/request/uploadimage", formData, {
         headers: {
           "content-type": "multipart/form-data",
           authorization: token,
@@ -112,7 +112,7 @@ const Profile = () => {
     e.preventDefault();
     try {
       const res = await axios.put(
-        "http://localhost:3001/request/update",
+        "http://localhost:8000/request/update",
         { email },
         {
           headers: {
@@ -144,7 +144,7 @@ const Profile = () => {
     }
     try {
       const res = await axios.put(
-        "http://localhost:3001/request/update",
+        "http://localhost:8000/request/update",
         { password: password, confirm_password: confirmPassword },
         {
           headers: {
@@ -172,7 +172,7 @@ const Profile = () => {
             <h1 className="profiletitle">Ta photo de profil</h1>
             <img
               className="profileuserpic"
-              src={`http://localhost:3001${user.profile_picture}`}
+              src={`http://localhost:8000${user.profile_picture}`}
               alt=""
             />
             <div>

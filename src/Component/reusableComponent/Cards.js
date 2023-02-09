@@ -22,7 +22,7 @@ const Cards = (props) => {
       AddEvent(idEvent);
       await axios
         .put(
-          `http://localhost:3001/request/user`,
+          `http://localhost:8000/request/user`,
           { favoriteEvent: idEvent },
           { headers: { authorization: token } }
         )
@@ -42,7 +42,7 @@ const Cards = (props) => {
   const removeFavorite = async (idEvent) => {
     if (user) {
       axios
-        .delete(`http://localhost:3001/request/user`, {
+        .delete(`http://localhost:8000/request/user`, {
           data: { favoriteEvent: idEvent },
           headers: { authorization: token },
         })

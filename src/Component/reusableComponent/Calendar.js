@@ -30,7 +30,7 @@ const CalendarComponent = (props) => {
   //fetch tous les dates où il existe des participants en base pour cette idEvent
   const fetchByEventId = () => {
     axios
-      .get(`http://localhost:3001/request/dateForEvent/all/${props.id}`)
+      .get(`http://localhost:8000/request/dateForEvent/all/${props.id}`)
       .then((res) => setEvents(res.data))
       .catch((err) => console.log(err));
   };
@@ -39,7 +39,7 @@ const CalendarComponent = (props) => {
   const addUserEvent = (dateSelect) => {
     axios
       .put(
-        `http://localhost:3001/request/dateForEvent/${props.id}`,
+        `http://localhost:8000/request/dateForEvent/${props.id}`,
         { date: dateSelect.toString().slice(0, 15), pseudo: user.pseudo },
         { headers: { authorization: token } }
       )

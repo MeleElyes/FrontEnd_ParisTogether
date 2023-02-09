@@ -52,7 +52,7 @@ const Navbar = () => {
           <div className="navbarbuttons">
             <img
               className="navbarprofilepic"
-              src={`http://localhost:3001${user.profile_picture}`}
+              src={`http://localhost:8000${user.profile_picture}`}
               alt="avatar de ton profil"
             />
             <button

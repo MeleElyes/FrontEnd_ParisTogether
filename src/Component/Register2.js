@@ -14,7 +14,7 @@ const Register2 = () => {
   const addFavorite = async (tag) => {
     axios
       .put(
-        `http://localhost:3001/request/user`,
+        `http://localhost:8000/request/user`,
         { favoriteTag: tag },
         { headers: { authorization: token } }
       )
@@ -26,7 +26,7 @@ const Register2 = () => {
 
   const removeFavorite = async (tag) => {
     axios
-      .delete(`http://localhost:3001/request/user`, {
+      .delete(`http://localhost:8000/request/user`, {
         data: { favoriteTag: tag },
         headers: { authorization: token },
       })
@@ -76,8 +76,6 @@ const Register2 = () => {
                           ? "register2tagselected"
                           : ""
                       }`}
-                
-
                       onClick={() =>
                         user &&
                         user.favoriteTag.length > 0 &&

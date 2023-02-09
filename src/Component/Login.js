@@ -28,7 +28,7 @@ const Login = () => {
     setEmailExist(false);
     setDifferentPassword(false);
     await axios
-      .post("http://localhost:3001/request/login", login)
+      .post("http://localhost:8000/request/login", login)
       .then((res) => {
         localStorage.setItem("auth-token", res.data);
         navigate("/postlogin");

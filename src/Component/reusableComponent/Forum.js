@@ -24,7 +24,7 @@ const CommentList = () => {
   const sendMessage = (e) => {
     e.preventDefault();
     axios
-      .post(`http://localhost:3001/request/comment/${id}`, sendComments, {
+      .post(`http://localhost:8000/request/comment/${id}`, sendComments, {
         headers: { authorization: token },
       })
       .then((res) => console.log(res.data))
@@ -36,7 +36,7 @@ const CommentList = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3001/request/comment/${id}`)
+      .get(`http://localhost:8000/request/comment/${id}`)
       .then((res) => {
         res.data !== "No comments" && setComments(res.data);
       })
@@ -65,7 +65,7 @@ const CommentList = () => {
                   key={comment.id}
                 >
                   <img
-                    src={`http://localhost:3001${comment.profile_picture}`}
+                    src={`http://localhost:8000${comment.profile_picture}`}
                     width="30px"
                     height={"30px"}
                     style={{ borderRadius: "100px" }}
