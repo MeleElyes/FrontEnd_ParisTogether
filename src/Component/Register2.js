@@ -14,7 +14,7 @@ const Register2 = () => {
   const addFavorite = async (tag) => {
     axios
       .put(
-        `http://localhost:8000/request/user`,
+        `back-end-paris-together-mph8p9fgf-meleelyes.vercel.app/request/user`,
         { favoriteTag: tag },
         { headers: { authorization: token } }
       )
@@ -26,7 +26,7 @@ const Register2 = () => {
 
   const removeFavorite = async (tag) => {
     axios
-      .delete(`http://localhost:8000/request/user`, {
+      .delete(`back-end-paris-together-mph8p9fgf-meleelyes.vercel.app/request/user`, {
         data: { favoriteTag: tag },
         headers: { authorization: token },
       })
